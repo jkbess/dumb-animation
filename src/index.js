@@ -1,0 +1,1 @@
+document.querySelector('#test').innerText('TEST #1');
