@@ -6,12 +6,24 @@ module.exports = {
     // 2
     output: {
       path: __dirname + '/dist',
-      filename: 'Animator.js'
+      filename: 'Animator.js',
+      library: {
+        name: 'Animator',
+        type: 'window',
+        export: 'default'
+      }
     },
     // 3
     devServer: {
-      directory: path.join(__dirname, 'public'),
-      open: ['/example']
+      static: [
+        {
+          directory: path.join(__dirname, 'example'),
+        },
+        {
+          directory: path.join(__dirname, 'dist'),
+        },
+      ],
+      open: ['/index.html']
     },
     mode: 'production'
 };

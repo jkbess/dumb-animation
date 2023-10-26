@@ -1,1 +1,7 @@
-document.querySelector('#test').innerText('TEST #1');
+
+import Animator from './animator';
+
+export default Animator;
+
+
+
