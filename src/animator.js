@@ -1,10 +1,6 @@
 import library from './lib/all.js';
 
 export default class {
-    effect = {
-        name: null,
-        interval: null
-    };
     activeEffect = null;
     activeInterval = null;
     library = library;
@@ -36,6 +32,7 @@ export default class {
         this.activeEffect = null;
         this.activeInterval = null;
         this.el.style.transformOrigin = null;
+        this.el.style.transition = null;
         this.el.style.transform = null;
     }
 
